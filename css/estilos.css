@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;700;900&display=swap');
+
+.enlace, #enlace{
+    padding: 0.5rem 2rem;
+    margin: 0 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+
+.logo{
+    margin: 0 0rem;
+    padding: 0;
+    width:7rem;
+    height:3.5rem;
+    border-radius: 1rem;
+}
+
+nav a:hover{
+    background-color: #00923f;
+    box-shadow:  0px 0px 5px 1.5px rgba(0,122,79,1);
+}
+.mt-6{
+    margin-top: 6rem;
+}
+
+.img-fondo {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+ }
+ 
+
+
+ /* enlaces de cursos */
+.alimentacion-enlace{
+    background-image: url("../img/cursos/alimentacion.jpg");
+    
+}
+.habitos-enlace{
+    background-image: url("../img/cursos/habitos.jpg");
+    
+}
+.iris-enlace{
+    background-image: url("../img/cursos/iris.jpg");
+}
+/* enlaces de cursos */
+
+
+/* enlaces de servicios */
+
+.ojo_gris-enlace{
+    background-image: url("../img/servicios/ojo_gris.jpg");
+    
+}
+
+.hidrolavado-enlace{
+    background-image: url("../img/servicios/hidrolavado.jpg");
+    
+}
+
+
+.shiatsu-enlace{
+    background-image: url("../img/servicios/shiatsu.jpg");
+    
+}
+
+.assesoria-enlace{
+    background-image: url("../img/servicios/bienestar.jpg");
+
+    
+}
+/* enlaces de servicios */
+
+
+.img-fondo{
+    width: 100%;
+    background-color: rgba(50, 50, 50, 0.5);
+    background-blend-mode: soft-light;
+    background-size: cover;
+
+
+}
+
+
+.img-enlace{
+    border-radius: 1rem;
+    background-color: rgba(195, 51, 51, 0.1);
+    background-blend-mode: soft-light;
+     display: flex;
+     width: 500px;
+     height: 500px;
+     background-size: cover;
+     /* background-color:#b62d2309; */
+ }
+ .img-enlace:hover{
+    background-color: rgba(203, 196, 196, 0.79);
+
+
+ }
+
+.fondo_imagen_iris{
+    background-color:rgba(195, 51, 51, 0.1) ;
+    color: #fff;
+}
+ 
+.mascara {
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+background-attachment: fixed;
+}
+

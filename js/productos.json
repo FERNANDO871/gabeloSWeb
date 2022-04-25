@@ -1,0 +1,81 @@
+[
+
+    {   
+        "nombre":"fem",
+        "foto":"fems.jpeg",
+        "precio":"5000MXN",
+        "descripcion":"este producto hace sushi"
+    },
+     
+    {   
+        "nombre":"fg",
+        "foto":"fg.jpeg",
+        "precio":"900MXN",
+        "descripcion":"este producto hace pizza"
+    },
+    {   
+        "nombre":"fo",
+        "foto":"fo.jpeg",
+        "precio":"1000MXN",
+        "descripcion":"este producto hace tacos"
+    },
+    {   
+        "nombre":"moringa",
+        "foto":"moringa.jpg",
+        "precio":"550MXN",
+        "descripcion":"este producto hace carnitas"
+    },
+    {   
+        "nombre":"sd",
+        "foto":"sd.jpg",
+        "precio":"50900MXN",
+        "descripcion":"este producto hace pozolito"
+    },
+
+    {   
+        "nombre":"sg",
+        "foto":"sg.jpeg",
+        "precio":"1200MXN",
+        "descripcion":"este producto hace magia"
+    },
+    {   
+        "nombre":"si",
+        "foto":"si.jpeg",
+        "precio":"1200MXN",
+        "descripcion":"este producto hace magia"
+    },
+    {   
+        "nombre":"slin",
+        "foto":"slin.jpeg",
+        "precio":"1200MXN",
+        "descripcion":"este producto hace magia"
+    },
+
+    {   
+        "nombre":"sn",
+        "foto":"sn.jpeg",
+        "precio":"1200MXN",
+        "descripcion":"este producto hace magia"
+    },
+    {   
+        "nombre":"sr",
+        "foto":"sr.jpeg",
+        "precio":"1200MXN",
+        "descripcion":"este producto hace magia"
+    },
+    {   
+        "nombre":"su",
+        "foto":"su.jpeg",
+        "precio":"1200MXN",
+        "descripcion":"este producto hace magia"
+    },
+    {   
+        "nombre":"su",
+        "foto":"su.jpeg",
+        "precio":"1200MXN",
+        "descripcion":"este producto hace magia"
+    }
+
+
+
+]

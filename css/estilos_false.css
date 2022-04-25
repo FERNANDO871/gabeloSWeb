@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+html{
+    font-size: 62.5%;
+
+}
+
+
+body{
+    font-size: 16px;
+    background-color: #6EBF8B;
+}
+
+nav a{
+    font-family: 'Dancing Script', cursive;
+}
+.hidden{
+    display: none;
+}
+.card img{
+    width: 25rem;
+
+}
+.card-body{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.card-body h5{
+    
+   padding: 1rem;
+
+}
+nav{
+    display: flex;
+    background-color: #DADBBD;
+   
+}
+.barra_de_navegadcion { 
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    background-color: #DADBBD;
+    
+    text-decoration: none;
+}
+.barra_de_navegadcion a{
+    padding: 1rem;
+    border-radius:0.5rem ;
+    color: #151D3B;
+}
+
+
+.imagen{
+   color: #D82148;
+    width: 10rem;
+    
+    background-color: #000;
+
+}
+
+
+
+
+ footer a{
+    padding: 1rem;
+    margin: 1rem 0;
+    text-decoration: none;
+    background-color: #DADBBD;
+    color: rgb(109, 103, 103);
+
+    display: flex;
+    border-radius: 0.5rem;
+}
+a:hover{
+    text-decoration: none;
+    background-color: rgb(92, 233, 202);
+    color: #151D3B;
+
+}
+.margenes{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.card{
+    background-color: #DADBBD;
+    border-radius: 1rem;
+}
+
+@media (max-width: 1000px) {
+    .margenes{
+        grid-template-columns:  1fr 1fr;
+    }
+  }
