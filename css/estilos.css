@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;700;900&display=swap');
 
 .enlace, #enlace{
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
     margin: 0 2rem;
     border-radius: 0.5rem;
     font-size: 1.2rem;
@@ -14,8 +14,8 @@
 .logo{
     margin: 0 0rem;
     padding: 0;
-    width:7rem;
-    height:3.5rem;
+    width:4rem;
+    height:4rem;
     border-radius: 1rem;
 }
 
@@ -23,8 +23,8 @@ nav a:hover{
     background-color: #00923f;
     box-shadow:  0px 0px 5px 1.5px rgba(0,122,79,1);
 }
-.mt-6{
-    margin-top: 6rem;
+.marguin-servicios-primera-linea{
+    margin-top: 5rem !important;
 }
 
 .img-fondo {
@@ -82,8 +82,16 @@ height: 100%;
 overflow: hidden;
 background-attachment: fixed;
 }
+@media(max-width:1250px){
+    .enlace{
+        margin: 0.1rem;
+    }
+    #enlace{
+        margin: 0px;
+        padding: 0.1rem;
+    }
 
-
+}
 @media(max-width:768px){
     .img-enlace{
         width: 100%;
@@ -93,3 +101,30 @@ background-attachment: fixed;
     
     }
 }
+@media(max-width:450px) {
+    .logo{
+        margin: 0 0rem;
+        padding: 0;
+        width:2rem;
+        height: 2rem;
+ 
+        border-radius: 1rem;
+    }
+        #enlace{
+        font-size: small;
+    }
+    .marguin-servicios-primera-linea{
+        margin-top: 2.5rem !important;
+    }
+}
+@media(max-width:290px) {
+    .marguin-servicios-primera-linea{
+        margin-top: 5rem !important;
+    }
+
+}
+
+
+
+
+
