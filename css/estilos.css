@@ -124,7 +124,20 @@ background-attachment: fixed;
 
 }
 
+@media(min-width:570px){
 
 
+.card{
+    transition:  ease-in, 0.2s;
+    
+}
 
+.card:hover{
+    transform:scale(1.2) ;
+    display: relative;
+    z-index: 100;
+    /* background-color: rgba(124, 121, 121, 0.126); */
+}
+
+}
 
