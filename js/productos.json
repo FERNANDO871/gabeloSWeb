@@ -1,80 +1,84 @@
 [
-
     {   
-        "nombre":"fem",
-        "foto":"fems.jpeg",
-        "precio":"5000MXN",
-        "descripcion":"este producto hace sushi"
-    },
-     
-    {   
-        "nombre":"fg",
-        "foto":"fg.jpeg",
-        "precio":"900MXN",
-        "descripcion":"este producto hace pizza"
-    },
-    {   
-        "nombre":"fo",
+        "nombre":"ANTIPARASITARIO",
         "foto":"fo.jpeg",
         "precio":"1000MXN",
-        "descripcion":"este producto hace tacos"
-    },
+        "descripcion":"Elimina todo tipo de parásitos que infestan al ser humano."
+    },    
     {   
-        "nombre":"moringa",
-        "foto":"moringa.jpg",
-        "precio":"550MXN",
-        "descripcion":"este producto hace carnitas"
-    },
-    {   
-        "nombre":"sd",
-        "foto":"sd.jpg",
-        "precio":"50900MXN",
-        "descripcion":"este producto hace pozolito"
-    },
-
-    {   
-        "nombre":"sg",
-        "foto":"sg.jpeg",
-        "precio":"1200MXN",
-        "descripcion":"este producto hace magia"
-    },
-    {   
-        "nombre":"si",
+        "nombre":"SISTEMA INTESTINAL",
         "foto":"si.jpeg",
         "precio":"1200MXN",
-        "descripcion":"este producto hace magia"
-    },
+        "descripcion":"Limpia al intestino grueso, colon, recto, elimina mal aliento, normaliza evacuación."
+    },    
     {   
-        "nombre":"slin",
-        "foto":"slin.jpeg",
+        "nombre":"SISTEMA DIGESTIVO",
+        "foto":"sd.jpg",
+        "precio":"50900MXN",
+        "descripcion":"Favorecela buena digestión, elimina gases, inflamación, agruras, etc."
+    },    
+    {   
+        "nombre":"SISTEMA URINARIO",
+        "foto":"su.jpeg",
         "precio":"1200MXN",
-        "descripcion":"este producto hace magia"
-    },
-
+        "descripcion":"Problemas de riñones, ácido úrico, vejiga, etc."
+    },    
     {   
-        "nombre":"sn",
+        "nombre":"SISTEMA GLANDULAR",
+        "foto":"sg.jpeg",
+        "precio":"1200MXN",
+        "descripcion":"Favorece la actividad glandular."
+    },
+    {   
+        "nombre":"SISTEMA NERVIOSO",
         "foto":"sn.jpeg",
         "precio":"1200MXN",
-        "descripcion":"este producto hace magia"
+        "descripcion":"Relaja, induce al sueño, nutre los nervios, elimina migraña, tension, etc."
     },
     {   
-        "nombre":"sr",
+        "nombre":"SISTEMA CIRCULATORIO",
+        "foto":"sc.jpeg",
+        "precio":"1200MXN",
+        "descripcion":"Mejora la circulación, várices, etc."
+    },
+    {   
+        "nombre":"SISTEMA RESPIRATORIO",
         "foto":"sr.jpeg",
         "precio":"1200MXN",
-        "descripcion":"este producto hace magia"
+        "descripcion":"Fortalece y limpia pulmones, bronquios, etc."
     },
     {   
-        "nombre":"su",
-        "foto":"su.jpeg",
+        "nombre":"SISTEMA INMUNOLOGICO",
+        "foto":"si.jpeg",
         "precio":"1200MXN",
-        "descripcion":"este producto hace magia"
+        "descripcion":"Fortalece y limpia pulmones, bronquios, etc."
     },
     {   
-        "nombre":"su",
-        "foto":"su.jpeg",
+        "nombre":"FULMINA GRASA",
+        "foto":"fg.jpeg",
         "precio":"1200MXN",
-        "descripcion":"este producto hace magia"
+        "descripcion":"Elimina la grasa coorporal, peso excesivo, mejora la figura, etc."
+    },
+    {   
+        "nombre":"NEEM",
+        "foto":"sr.jpeg",
+        "precio":"1200MXN",
+        "descripcion":"Depurador, antivacterial, auxiliar en el contron del azucar."
+    },
+    {   
+        "nombre":"NUVITAL",
+        "foto":"sr.jpeg",
+        "precio":"900MXN",
+        "descripcion":"Purifica el cuerpo y quita sus malos olores, 60 minerales."
     }
+
+
+
+
+
+
+
+
 
 
 

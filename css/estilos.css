@@ -9,6 +9,9 @@
     font-family: 'Roboto Slab', serif;
 
 }
+.hidden{
+    display: none;
+}
 
 
 .logo{
@@ -128,13 +131,15 @@ background-attachment: fixed;
 
 
 .card{
-    transition:  ease-in, 0.2s;
-    
+    transition:  ease-in, .3s;
+     overflow: hidden;
 }
 
 .card:hover{
     transform:scale(1.2) ;
     display: relative;
+    border-radius: 2rem;
+   
     z-index: 100;
     /* background-color: rgba(124, 121, 121, 0.126); */
 }
