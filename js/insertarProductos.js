@@ -22,30 +22,37 @@ async function consultar(){
 
 function imprimirproductos(data){
     // console.log(data);
-    const fr=new FileReader();
-    try {
-        console.log( fr.FileReader.readAsDataURL("../img/prod/fg.jpeg"));
-    } catch (e) {
-        console.log(e);
-    }
-    
+
     data.forEach(producto =>{
-        
+
         try{
 
             // console.log(producto);
+            
             template.querySelector('h5').textContent = producto.nombre;
             template.querySelectorAll('p')[0].textContent = '$'+producto.precio;
             template.querySelectorAll('p')[1].textContent = producto.descripcion;
             template.querySelector('img').src = "img/prod/" + producto.foto;
-            console.log( fr.FileReader.readAsDataURL("img/prod/fg.jpeg"));
+
+            template.querySelectorAll('p')[2].textContent ="disponibles: " + producto.cantidad;
+
+
+            
+            template.querySelectorAll('p')[2].classList.contains('text-danger') && template.querySelectorAll('p')[2].classList.remove('text-danger');
+            template.querySelectorAll('p')[2].classList.contains('text-success') && template.querySelectorAll('p')[2].classList.remove('text-success');
+            template.querySelectorAll('p')[2].classList.add(producto.cantidad>0 ? 'text-success':'text-danger');
+
+
+
+
+            
         }catch(e){
             console.log(e);
         }
 
         const clone = template.cloneNode('true');
         fragment.appendChild(clone);
-        // console.log(clone);
+        console.log(clone);
 
     })
     items.appendChild(fragment);

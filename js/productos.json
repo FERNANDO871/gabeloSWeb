@@ -3,73 +3,71 @@
         "nombre":"ANTIPARASITARIO",
         "foto":"fo.jpeg",
         "precio":"1000MXN",
-        "descripcion":"Elimina todo tipo de parásitos que infestan al ser humano."
+        "descripcion":"Elimina todo tipo de parásitos que infestan al ser humano.",
+        "cantidad":"0"
     },    
     {   
         "nombre":"SISTEMA INTESTINAL",
         "foto":"si.jpeg",
         "precio":"1200MXN",
-        "descripcion":"Limpia al intestino grueso, colon, recto, elimina mal aliento, normaliza evacuación."
+        "descripcion":"Limpia al intestino grueso, colon, recto, elimina mal aliento, normaliza evacuación.",
+        "cantidad":"1"
     },    
     {   
         "nombre":"SISTEMA DIGESTIVO",
         "foto":"sd.jpg",
         "precio":"50900MXN",
-        "descripcion":"Favorecela buena digestión, elimina gases, inflamación, agruras, etc."
+        "descripcion":"Favorecela buena digestión, elimina gases, inflamación, agruras, etc.",
+        "cantidad":"1"
     },    
     {   
         "nombre":"SISTEMA URINARIO",
         "foto":"su.jpeg",
         "precio":"1200MXN",
-        "descripcion":"Problemas de riñones, ácido úrico, vejiga, etc."
+        "descripcion":"Problemas de riñones, ácido úrico, vejiga, etc.",
+        "cantidad":"1"
     },    
     {   
         "nombre":"SISTEMA GLANDULAR",
         "foto":"sg.jpeg",
         "precio":"1200MXN",
-        "descripcion":"Favorece la actividad glandular."
+        "descripcion":"Favorece la actividad glandular.",
+        "cantidad":"1"
     },
     {   
         "nombre":"SISTEMA NERVIOSO",
         "foto":"sn.jpeg",
         "precio":"1200MXN",
-        "descripcion":"Relaja, induce al sueño, nutre los nervios, elimina migraña, tension, etc."
+        "descripcion":"Relaja, induce al sueño, nutre los nervios, elimina migraña, tension, etc.",
+        "cantidad":"1"
     },
     {   
         "nombre":"SISTEMA CIRCULATORIO",
         "foto":"sc.jpeg",
         "precio":"1200MXN",
-        "descripcion":"Mejora la circulación, várices, etc."
+        "descripcion":"Mejora la circulación, várices, etc.",
+        "cantidad":"1"
     },
     {   
         "nombre":"SISTEMA RESPIRATORIO",
         "foto":"sr.jpeg",
         "precio":"1200MXN",
-        "descripcion":"Fortalece y limpia pulmones, bronquios, etc."
+        "descripcion":"Fortalece y limpia pulmones, bronquios, etc.",
+        "cantidad":"1"
     },
     {   
         "nombre":"SISTEMA INMUNOLOGICO",
         "foto":"si.jpeg",
         "precio":"1200MXN",
-        "descripcion":"Fortalece y limpia pulmones, bronquios, etc."
+        "descripcion":"Fortalece y limpia pulmones, bronquios, etc.",
+        "cantidad":"1"
     },
     {   
         "nombre":"FULMINA GRASA",
         "foto":"fg.jpeg",
         "precio":"1200MXN",
-        "descripcion":"Elimina la grasa coorporal, peso excesivo, mejora la figura, etc."
-    },
-    {   
-        "nombre":"NEEM",
-        "foto":"sr.jpeg",
-        "precio":"1200MXN",
-        "descripcion":"Depurador, antivacterial, auxiliar en el contron del azucar."
-    },
-    {   
-        "nombre":"NUVITAL",
-        "foto":"sr.jpeg",
-        "precio":"900MXN",
-        "descripcion":"Purifica el cuerpo y quita sus malos olores, 60 minerales."
+        "descripcion":"Elimina la grasa coorporal, peso excesivo, mejora la figura, etc.",
+        "cantidad":"1"
     }
 
 
