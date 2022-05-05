@@ -1,15 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.88.1">
-    <title>Montessano cursos.</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montessano Cursos</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/navegacion.css">
+    <link rel="stylesheet" href="css/estilos_index.css">
     <link rel="shortcut icon" href="#">
 
     
@@ -41,34 +39,33 @@
     
     
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <div class="container-fluid">
-            <!-- <img src="img/logos/logo1.png" class="logo"/> -->
-            <a class="navbar-brand " href="index.html" id="enlace" ><img src="img/logos/logo1.png" class="logo"/></a>
-            <a class="navbar-brand " href="Salud.html" id="enlace" >Salud basada en principios.</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-                <li class="nav-item"> 
-                  <a class="nav-link enlace " href="productos.html">Productos</a>
-                </li>
-                <li class="nav-item"> 
-                  <a class="nav-link enlace " href="cursos.html">Cursos</a>
-                </li>
-                <li class="nav-item"> 
-                  <a class="nav-link enlace " href="servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item"> 
-                 <a class="nav-link enlace " href="iris.html">Iris</a>
-                </li>
-              </ul>
+      <nav>
+          <div class="contenedor-nav">
+            <div class="a-salud">
+              <a class="a-nav a-logo " href="index.html" ><img src="img/logos/logo1.png" class="logo"/></a>
+              <a class="a-nav" href="Salud.html"  > Salud basada en principios.  </a>
+            <label for="desplegar">
+              <svg xmlns="http://www.w3.org/2000/svg" class="menu-desplegable" width="52" height="52" viewBox="0 0 24 24" stroke-width="2.5" stroke="#1eb346" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+            </label>
+            
             </div>
+            <input type="checkbox" class="hidden" id="desplegar">
+              <div class="desplegable">
+                <a class="a-nav " href="productos.html">Productos</a>
+                <a class="a-nav  " href="cursos.html">Cursos</a>
+                <a class="a-nav  " href="servicios.html">Servicios</a>
+                <a class="a-nav  " href="iris.html">Iris</a>
+             </div>
+              
+    
           </div>
         </nav>
     </header>
-
 <main>
 
   <div id="myCarousel" class="carousel slide " data-bs-ride="carousel">

@@ -4,116 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salud basada en principios</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/navegacion.css">
+    <link rel="stylesheet" href="css/estilos_index.css">
     <link rel="shortcut icon" href="#">
-
-    
-
     <!-- Bootstrap core CSS -->
 <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Montessano</title>
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark  bg-dark ">
-        <div class="container-fluid">
-          <!-- <img src="img/logos/logo1.png" class="logo"/> -->
-          <a class="navbar-brand " href="index.html" id="enlace" ><img src="img/logos/logo1.png" class="logo"/></a>
-          <a class="navbar-brand " href="Salud.html" id="enlace" >Salud basada en principios.</a>
-       
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-              <li class="nav-item hidden"> 
-                <a class="nav-link enlace" href="productos.html">Productos</a>
-              </li>
-              <li class="nav-item"> 
-                <a class="nav-link enlace " href="productos.html">products</a>
-              </li>
-              <li class="nav-item"> 
-                <a class="nav-link enlace " href="cursos.html">Cursos</a>
-              </li>
-              <li class="nav-item"> 
-                <a class="nav-link enlace " href="servicios.html">Servicios</a>
-              </li>
-              <li class="nav-item"> 
-               <a class="nav-link enlace " href="iris.html">Iris</a>
-              </li>
-            </ul>
+    <nav>
+        <div class="contenedor-nav">
+          <div class="a-salud">
+            <a class="a-nav a-logo " href="index.html" ><img src="img/logos/logo1.png" class="logo"/></a>
+            <a class="a-nav" href="Salud.html"  > Salud basada en principios.  </a>
+          <label for="desplegar">
+            <svg xmlns="http://www.w3.org/2000/svg" class="menu-desplegable" width="52" height="52" viewBox="0 0 24 24" stroke-width="2.5" stroke="#1eb346" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <line x1="4" y1="6" x2="20" y2="6" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="18" x2="20" y2="18" />
+          </svg>
+          </label>
+          
           </div>
+          <input type="checkbox" class="hidden" id="desplegar">
+            <div class="desplegable">
+              <a class="a-nav " href="productos.html">Productos</a>
+              <a class="a-nav  " href="cursos.html">Cursos</a>
+              <a class="a-nav  " href="servicios.html">Servicios</a>
+              <a class="a-nav  " href="iris.html">Iris</a>
+           </div>
+            
+  
         </div>
       </nav>
   </header>
-  <main>
-        <!-- Primer bloque imagen principal-->
-        <div class="row p-0">
-            <div class="col-12 img-fondo d-flex align-items-center justify-content-center" style="
-                background-image: url('img/arboles.jpg');
-                height: 90vh;">
-                <div class="text-center text-white">
-                    <h1 class="display-4 fw-normal">Salud natural</h1>
-                    <p class="lead fw-normal">La salud natural se basa en principios, no en remedios.</p>
-                    <a class="btn btn-outline-light" href="Salud.html">Intégrate</a>   
+
+
+
+
+
+
+  <main class="main-index">
+
+   
+
+            <div class="img-1 img-fondo centrar">
+                <div class=" texto-index">
+                    <h1 class="titulo-index">Salud natural</h1>
+                    <p class="parrafo-index">La salud natural se basa en principios, no en remedios.</p>
+                    <a class="botones" href="Salud.html">Intégrate</a>   
                 </div>	
             </div>
-        </div>
-  <!-- Segundo bloque de 2 imagenes -->
-    <div class="row p-0">
-       <div class="col-md-6 img-fondo d-flex align-items-center justify-content-center" style="background-image: url('img/cursos/iris.jpg'); height: 90vh;">
-        <div class="mascara d-flex align-items-center justify-content-center" style="background-color: rgba(0, 0, 0, 0.1);">
 
-          <div class="text-center text-white">
-              <h1 class="display-4 fw-normal">Iris</h1>
-              <p class="lead fw-normal">El estudio de los ojos revela tu salud.</p>
-              <a class="btn btn-outline-light" href="iris.html">Ver más</a>   
-          </div>  
-        </div>
-    </div>
-    <div class="col-md-6 img-fondo " style="background-image: url('img/seven.jpg'); height: 90vh;">
-        <div class="mascara d-flex align-items-center justify-content-center" >
-          <div class="text-center text-white" >
-              <h1 class="display-4 fw-normal">Como obtener suprainmunidad</h1>
-              <p class="lead fw-normal">El curso que mejora tu salud.</p>
-              <a class="btn btn-outline-light" href="cursos.html">Conócelos</a>   
-          </div>  
-        </div>
-    </div>
-  </div>
-  <!-- Tercer bloque de 2 imagenes -->
-    <div class="row p-0">
-    <div class="col-md-6 img-fondo" style="background-image: url('img/productos.jpg'); height: 90vh;">
-        <div class="mascara d-flex align-items-center justify-content-center" style="background-color: rgba(0, 0, 0, 0.3);">
-          <div class="text-center text-white">
-              <h1 class="display-4 fw-normal">Productos</h1>
-              <p class="lead fw-normal">Fórmulas naturistas que mejoran tu salud.</p>
-              <a class="btn btn-outline-light" href="productos.html">obtener</a>   
-          </div>  
-        </div>
-     </div>
-    <div class="col-md-6 img-fondo " style="background-image: url('img/negocio.jpeg'); height: 90vh;">
-          <div class="mascara d-flex align-items-center justify-content-center" style="background-color: rgba(0, 0, 0, 0.3);">
-              <div class="text-center text-white" >
-                  <h1 class="display-4 fw-normal">Servicios</h1>
-                  <p class="lead fw-normal">Para recuperar tu salud.</p>
-                  <a class="btn btn-outline-light" href="servicios.html">Ver más</a>   
+
+          <div class="img-2 img-fondo centrar" >
+                <div class=" texto-index">
+                    <h1 class="titulo-index">Iris</h1>
+                    <p class="parrafo-index">El estudio de los ojos revela tu salud.</p>
+                    <a class="botones" href="iris.html">Ver más</a>   
+                </div>  
+          </div>
+
+
+
+          <div class="img-3 img-fondo centrar">
+                <div class=" texto-index" >
+                    <h1 class="titulo-index">Suprainmunidad</h1>
+                    <p class="parrafo-index">El curso que mejora tu salud.</p>
+                    <a class="botones" href="cursos.html">Conócelos</a>   
+                </div>  
+              
+          </div>
+
+
+  
+          <div class="img-4 img-fondo centrar" >
+                <div class=" texto-index">
+                    <h1 class="titulo-index">Productos</h1>
+                    <p class="parrafo-index">Fórmulas naturistas que mejoran tu salud.</p>
+                    <a class="botones" href="productos.html">obtener</a>   
+                </div>  
+              
+          </div>
+
+
+        <div class="img-5 img-fondo centrar"  >
+              <div class="texto-index" >
+                  <h1 class="titulo-index">Servicios</h1>
+                  <p class="parrafo-index">Para recuperar tu salud.</p>
+                  <a class="botones" href="servicios.html">Ver más</a>   
               </div>  
         </div>
     </div>
-  </div>
+ 
   </main>
 
-    
+ 
 
         
-    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+
 </body>
 </html>
