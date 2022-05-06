@@ -1,251 +1,225 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;700;900&display=swap');
 
-:root{
-    --verde_primario:#007a4f;
-    --verde_secundario:#00923f;
-    --color_botones:#f8f9fa;
-    --color_botones_hover:#000;
-}
-
-*, *:before, *:after{
-    margin: 0;
-    box-sizing: border-box;
-    font-size: 62.5%; /*esto hace que 1rem sea igual a 10px*/
-}
-a{
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: none;
-}
-p{
-    font-size: 2rem;
-}
-h1{
-    font-size: 4rem;
-}
-
-
-.main-index{
+.contenedor_cursos{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3,1fr); 
     grid-template-areas: 
-    "elemento1 elemento1"
-    "elemento2 elemento3"
-    "elemento4 elemento5"
+    "e1 e2 e3"
+    "e4 e5 e6"
+    "e7 e8 e9"
+    "e10 e11 e12"
     ;
-}
-.img-1{
-    background-image: url('../img/arboles.jpg');
-    grid-area: elemento1;
-}
-.img-2{
-    background-image: url('../img/cursos/iris.jpg');
-    grid-area: elemento2;
-}
-.img-3{
-    background-image: url('../img/seven.jpg');
-    grid-area: elemento3;
-}
-.img-4{
-    background-image: url('../img/productos.jpg');
-    grid-area: elemento4;
-}
-.img-5{
-    background-image: url('../img/negocio.jpeg');
-    grid-area: elemento5;
-}
-
-.centrar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.texto-index{
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-
-.botones{
-   
-    cursor: pointer;
-    color:var(--color_botones);
-    border-color: var(--color_botones);
-    display: inline-block;
-    font-weight: 400;
-    line-height: 1.5;
-    
     text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    cursor: pointer;
-
-    border: 1px solid ;
-    border-radius: 1rem;
-    padding: 1rem 2rem;
-    font-size: 2rem;
-
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
-}
-.botones:hover{
-    background-color:var(--color_botones);
-    color: var(--color_botones_hover);
-    border-width: 0;
-    transform: scale(1.2);
-}
-
-
-.enlace, #enlace{
-    padding: 1rem 2rem;
-    margin: 0 1rem;
-    border-radius: 1rem;
-    font-size: 3rem;
-    font-weight: bold;
-    font-family: 'Roboto Slab', serif;
+    margin: 5rem;
+    --color_botones:#2e2e2e;
+    --color_botones_hover:rgb(184, 184, 184);
 
 }
-.hidden{
-    display: none;
-}
-
-
-
-.logo{
-    margin: 0 0rem;
-    padding: 0;
-    width:6rem;
-    height:4rem;
-    border-radius: 1rem;
-}
-
-nav a:hover{
-    background-color:var(--verde_secundario) ;
-    box-shadow:  0px 0px 5px 1.5px var(--verde_primario);
-}
-.marguin-servicios-primera-linea{
-    margin-top: 5rem !important;
-}
-
-.img-fondo {
-    width: 100%;
-    height:700px;
-    position: relative;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.568);
-    background-position: center center;
- }
- 
-.altura_100{
-    height: 100px;
-}
-.img-fondo{
+.contenedor_curso{
     width: 100%;
     height: 100vh;
-    background-color: rgba(50, 50, 50, 0.5);
-    background-blend-mode: soft-light;
-    background-size: cover;
-
-
+    flex: 1 1 0;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
 }
+.contenedor_curso_logo{
+    width: 100%;
+    height: 100vh;
+    flex: 1 1 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.logo1_curso, 
+.logo2_curso, 
+.logo3_curso{
+    margin:auto ;
+}
+.parrafo1_curso, 
+.parrafo2_curso, 
+.parrafo3_curso{
+    max-width: 50vw;
+}
+.logo1_curso{
+    grid-area: e1;
+}
+.logo2_curso{
+    grid-area: e2;
+}
+.logo3_curso{
+    grid-area: e3;
+}
+.titulo1_curso{
+    grid-area: e4;
+}
+.titulo2_curso{
+    grid-area: e5;
+}
+.titulo3_curso{
+    grid-area: e6;
+}
+
+.parrafo1_curso{
+    grid-area: e7;
+}
+
+.parrafo2_curso{
+grid-area: e8;
+}
+
+.parrafo3_curso{
+grid-area: e9;
+}
+
+.boton1_curso{
+grid-area: e10;
+}
+
+.boton2_curso{
+grid-area: e11;
+}
+
+.boton3_curso{
+grid-area: e12;
+}
+.hr_hidden1{
+    display: none;
+    grid-area: ehr1;
+}
+.hr_hidden2{
+    display: none;
+    grid-area: ehr2;
+}
+
+
+
+
+
+
+
 
 
 .img-enlace{
     border-radius: 1rem;
-    background-color: rgba(195, 51, 51, 0.1);
+    margin-right: 4rem;
+    background-color: rgba(51, 51, 51, 0.5);
     background-blend-mode: soft-light;
-     display: flex;
-     width: 100%;
-     height: 500px;
-     background-size: cover;
+    display: flex;
+    width: 35vw;
+    height: 50vh;
+    background-size: cover;
+    
      /* background-color:#b62d2309; */
  }
- .img-enlace:hover{
-    background-color: rgba(203, 196, 196, 0.79);
-
-
+ .centrar_img{
+     background-position: center;
  }
+ .posision_final_img{
+     background-position: end;
+ }
+.img-enlace:hover{
+    background-color:  var(--color_hover_img);
+}
+.secciones{
+    font-weight: 200;
+    width: 80%;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.secciones_img{
+    width: 20%;
+}
+.seccion_1_texto, 
+.seccion_2_texto, 
+.seccion_3_texto{
+    margin: 0 2srem 0 0;
+} 
 
-.fondo_imagen_iris{
-    background-color:rgba(195, 51, 51, 0.1) ;
-    color: #fff;
-}
- 
-.mascara {
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-width: 100%;
-height: 100%;
-overflow: hidden;
-background-attachment: fixed;
-}
-@media(max-width:1250px){
-    .enlace{
-        margin: 0.1rem;
-    }
-    #enlace{
-        margin: 0px;
-        padding: 0.1rem;
-    }
-
-}
-@media(max-width:768px){
-    .img-enlace{
-        width: 100%;
-        height: 300px;    
-    }
-    .img-2, .img-3, .img-4, .img-5{
-        height: 50vw;
-    }
-}
-@media(max-width:450px) {
-    .logo{
-        margin: 0 0rem;
-        padding: 0;
-        width:2rem;
-        height: 2rem;
- 
-        border-radius: 1rem;
-    }
-        #enlace{
-        font-size: small;
-    }
-    .marguin-servicios-primera-linea{
-        margin-top: 2.5rem !important;
-    }
-}
-@media(max-width:290px) {
-    .marguin-servicios-primera-linea{
-        margin-top: 5rem !important;
-    }
-
+.reversa{
+    flex-direction: row-reverse;
 }
 
-@media(min-width:570px){
 
+@media(max-width:950px){
+    .hr_hidden1{
+        display: block;
+    }
+    .contenedor_cursos{
 
-.card{
-    transition:  ease-in, .3s;
-     overflow: hidden;
+        grid-template-columns: repeat(2,1fr); 
+        gap: 4rem;
+        grid-template-areas: 
+        "e1 e2"
+        "e4 e5"
+        "e7 e8"
+        "e10 e11"
+        "ehr1 ehr1"
+        "e3 e3"
+        "e6 e6"
+        "e9 e9"
+        "e12 e12"
+        ;
+
+    
+    }
+    
+    .parrafo3_curso{
+        max-width: 50vw;
+    }
+
 }
+@media(max-width:830px){
+    .secciones{
+        flex-direction: column;
 
-.card:hover{
-    transform:scale(1.2) ;
-    display: relative;
-    border-radius: 2rem;
+    }
+    .reversa{
+        flex-direction: column;
+    }
    
-    z-index: 100;
-    /* background-color: rgba(124, 121, 121, 0.126); */
+    .img-enlace{
+        width: 80vw;
+        margin:auto;
+    }
+    .secciones{
+        text-align: center;
+    }
 }
+@media(max-width:480px){
+    .hr_hidden2{
+        display: block;
+    }
+        .contenedor_cursos{
+        --tamano_fuente_titulos:3rem;
+        grid-template-columns: repeat(1,1fr); 
+        gap: 4rem;
+        grid-template-areas: 
+        "e2"
+        "e5"
+        "e8"
+        "e11"
+        "ehr1"
+        "e1"
+        "e4"
+        "e7"
+        "e10"
+        "ehr2"
+        "e3"
+        "e6"
+        "e9"
+        "e12"
+        ; 
+        
+    }
+    body{
+        --tamano_fuente_titulos:3.5rem;
+    }
+
 
 }
-
