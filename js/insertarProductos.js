@@ -35,16 +35,10 @@ function imprimirproductos(data){
             template.querySelector('img').src = "img/prod/" + producto.foto;
 
             template.querySelectorAll('p')[2].textContent ="disponibles: " + producto.cantidad;
-
-
-            
+   
             template.querySelectorAll('p')[2].classList.contains('text-danger') && template.querySelectorAll('p')[2].classList.remove('text-danger');
             template.querySelectorAll('p')[2].classList.contains('text-success') && template.querySelectorAll('p')[2].classList.remove('text-success');
             template.querySelectorAll('p')[2].classList.add(producto.cantidad>0 ? 'text-success':'text-danger');
-
-
-
-
             
         }catch(e){
             console.log(e);

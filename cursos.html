@@ -35,38 +35,77 @@
   <body>
     
     
-    <header>
-      <nav>
-          <div class="contenedor-nav">
-            <div class="a-salud">
-              <a class="a-nav a-logo " href="index.html" ><img src="img/logos/logo1.png" class="logo"/></a>
-              <a class="a-nav" href="Salud.html"  > Salud basada en principios.  </a>
-            <label for="desplegar">
-              <svg xmlns="http://www.w3.org/2000/svg" class="menu-desplegable" width="52" height="52" viewBox="0 0 24 24" stroke-width="2.5" stroke="#1eb346" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <line x1="4" y1="6" x2="20" y2="6" />
-              <line x1="4" y1="12" x2="20" y2="12" />
-              <line x1="4" y1="18" x2="20" y2="18" />
-            </svg>
-            </label>
-            
-            </div>
-            <input type="checkbox" class="hidden" id="desplegar">
-              <div class="desplegable">
-                <a class="a-nav " href="productos.html">Productos</a>
-                <a class="a-nav  " href="cursos.html">Cursos</a>
-                <a class="a-nav  " href="servicios.html">Servicios</a>
-                <a class="a-nav  " href="iris.html">Iris</a>
-             </div>
-              
-    
+  <header>
+    <nav>
+        <div class="contenedor-nav">
+          <div class="contenedor-salud">
+            <a class="a-nav a-logo " href="index.html" ><img src="img/logos/logo1.png" class="logo"/></a>
+            <a class="a-nav a-salud" href="Salud.html"  > Salud basada en principios.  </a>
+          <label for="desplegar">
+            <svg xmlns="http://www.w3.org/2000/svg" class="menu-desplegable"  viewBox="0 0 24 24" stroke-width="2.5" stroke="#1eb346" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <line x1="4" y1="6" x2="20" y2="6" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="18" x2="20" y2="18" />
+          </svg>
+          </label>
+          
           </div>
-        </nav>
-    </header>
+          <input type="checkbox" class="hidden" id="desplegar">
+            <div class="desplegable">
+              <a class="a-nav " href="productos.html">Productos</a>
+              <a class="a-nav  " href="cursos.html">Cursos</a>
+              <a class="a-nav  " href="servicios.html">Servicios</a>
+              <a class="a-nav  " href="iris.html">Iris</a>
+           </div>
+            
+  
+        </div>
+      </nav>
+  </header>
 <main>
+ 
+
+
+ 
+
+  <div class="carrusel">
 
 
 
+      <div class="carrusel_flecha_izquierda flechas ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <polyline points="15 6 9 12 15 18" />
+              </svg>
+              </div>
+              <div class="carrusel_flecha_derecha flechas ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <polyline points="9 6 15 12 9 18" />
+                </svg>
+              </svg>
+      </div>
+
+
+    <div class="carrusel_slicer centrar">
+      <h1>Salud basada en principios</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, vitaeasdasdasdasda!</p>
+    </div>
+    <div class="carrusel_slicer centrar">
+      <h1>Iridologia</h1>
+      <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit. Quae, vitae!</p>
+    </div>
+    <div class="carrusel_slicer centrar">
+      <h1>Los 7 habitos</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, vitae!</p>
+    </div>
+    <div class="carrusel_slicer centrar">
+      <h1>Alimentación</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, vitae!</p>
+    </div>
+
+  </div>
 
 
 
@@ -213,7 +252,7 @@
 
 
 
-
+  <script src="js/carrusel.js"></script>
       
   </body>
 </html>

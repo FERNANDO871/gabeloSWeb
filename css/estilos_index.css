@@ -85,14 +85,14 @@
     }
 }
 @media(max-width:450px) {
-    .logo{
+    /* .logo{
         margin: 0 0rem;
         padding: 0;
-        width:2rem;
-        height: 2rem;
+        width:4rem;
+        height: 3rem;
  
         border-radius: 1rem;
-    }
+    } */
 
 
 

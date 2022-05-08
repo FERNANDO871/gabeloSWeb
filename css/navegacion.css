@@ -13,6 +13,7 @@
     --fuente_textos:'Poppins', sans-serif;
     --tamano_fuente_botones:2rem;
     --tamano_fuente_titulos:4rem;
+    --bg_carrusel:linear-gradient(90deg, rgba(166,173,66,0.5) 0%, rgba(42,172,42,0.5) 100%);
     --color_textos:#6c757d ;
     --clipy:  polygon(0 0, 100% 0, 100% 0, 0 0);
 
@@ -20,6 +21,7 @@
 
 *, *:before, *:after{
     box-sizing: border-box;
+ 
     font-size: 62.5%; /*esto hace que 1rem sea igual a 10px*/
     padding: 0;
     margin: 0;
@@ -67,6 +69,18 @@ hr{
     color:var(--color_texto);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/*clases de ayuda*/
 .centrar{
     display: flex;
     align-items: center;
@@ -74,13 +88,27 @@ hr{
 }
 
 .hidden{
-    transition: 20s, ease-in,opacity;
-    opacity: 0.1;
     display: none;
 }
 
 .flex_center{
     align-self:center;
+}
+
+
+
+/* estilos universales */
+.img-fondo{
+    width: 100%;
+    height: 100vh;
+  
+    padding:1rem;
+    background-color: rgba(50, 50, 50, 0.5);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
 }
 .botones{
    
@@ -110,22 +138,62 @@ hr{
     transform: scale(1.2);
 }
 
-.img-fondo{
+/* carrusel */
+.carrusel{
+    margin: 0 auto;
+    background: var(--bg_carrusel);
     width: 100%;
     height: 100vh;
-  
-    padding:1rem;
-    background-color: rgba(50, 50, 50, 0.5);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    overflow: hidden;
+    color: var(--color_texto);
+    position: relative;
+}
+.carrusel_slicer{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    position: absolute;
+    transition: transform, ease-in-out, 1s;
+    top: 0;
+    left: 0;
+
+}
+.carrusel_flecha_derecha,
+.carrusel_flecha_izquierda{
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+
+}
+.carrusel_flecha_derecha{
+    top:0;
+    right: 0;
+    justify-content: flex-end;
+    
 
 }
 
+
+
+
+
+
+/*clases de  la navegacion*/
+
+.logo, .menu-desplegable{
+    margin: 0 0rem;
+    width:6rem;
+    height:4rem;
+}
 .menu-desplegable{
     display: none;
     border-radius:1rem ;
+}
+.logo{
+    border-radius: 1rem;
 }
 .desplegable{
     display: flex;
@@ -139,12 +207,6 @@ hr{
     justify-content:flex-start;
     align-items: center;
 }
-
-.a-logo{
-    margin: 0;
-    display: flex;
-    height: 100%;
-}
 .a-nav{
     color: var(--color_texto);
     text-decoration: none;
@@ -156,7 +218,16 @@ hr{
     font-family: 'Roboto Slab', serif;
 
 }
-.a-salud{
+.a-logo{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100%;
+}
+
+.contenedor-salud{
+    width: 90%;
+    text-align: center;
     flex-grow:12;
     display: flex;
     align-items: center;
@@ -167,13 +238,13 @@ hr{
 }
 
 
-.logo{
-    margin: 0 0rem;
-    padding: 0.1;
-    width:6rem;
-    height:4rem;
-    border-radius: 1rem;
-}
+
+
+
+
+
+
+
 
 
 @media(max-width:1250px){
@@ -196,9 +267,17 @@ hr{
 
 }
 @media(max-width:768px){
-
+    .a-logo{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        height: 100%;
+    }
     .contenedor-nav{
         flex-direction: column;
+    }
+    .contenedor-salud{
+        justify-content: space-between;
     }
 
     .menu-desplegable{
@@ -224,6 +303,10 @@ hr{
 
 }
 @media(max-width:450px) {
+    .a-nav{
+        display: block;
+    }
+
 
 }
 @media(max-width:290px) {
