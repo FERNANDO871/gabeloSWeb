@@ -13,6 +13,8 @@
     --fuente_textos:'Poppins', sans-serif;
     --tamano_fuente_botones:2rem;
     --tamano_fuente_titulos:4rem;
+    --p_max_width:100rem;
+    --h1_max_width:100rem;
     --smooth_carrusel:transform, ease-in-out, 0s;
     --bg_carrusel:linear-gradient(90deg, rgba(166,173,66,0.5) 0%, rgba(42,172,42,0.5) 100%);
     --color_textos:#6c757d ;
@@ -52,13 +54,14 @@ a:hover{
     text-decoration: none;
 }
 p{
-    max-width: 1000px;
+    max-width:var(--p_max_width);
     margin: 2rem auto;
     font-size: calc(var(--tamano_fuente_titulos)*0.5);
     font-weight: 200;
 }
 h1 {
-    font-size: 4rem;
+    max-width:var(--h_max_width);
+    font-size: var(--tamano_fuente_titulos);
 }
 h2{
     font-size: calc(var(--tamano_fuente_titulos)*0.7);
@@ -148,6 +151,8 @@ hr{
     overflow: hidden;
     color: var(--color_texto);
     position: relative;
+    text-align: center;
+    
 }
 .carrusel_slicer{
     width: 100%;
@@ -182,14 +187,14 @@ hr{
     width: 100%;
     height: 10rem;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
 }
 .punto_slicer{
     background-color: rgba(0, 122, 79, 0.5);
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     border-radius: 50%;
 }
 .punto_slicer--activo{
@@ -237,6 +242,9 @@ hr{
     font-weight: bold;
     font-family: 'Roboto Slab', serif;
 
+}
+.a-nav--activo{
+    color: var(--verde_primario);
 }
 .a-logo{
     padding: 0;
@@ -304,6 +312,10 @@ hr{
         display: block;
         
     }
+    .carrusel_slicer{
+        --p_max_width:80%;
+        --h_max_width:80%; 
+    }
     
     .desplegable{
         height: 1px;
@@ -322,14 +334,19 @@ hr{
  
 
 }
-@media(max-width:450px) {
+@media(max-width:510px) {
+    .carrusel_slicer{
+        --p_max_width:70%;
+        --tamano_fuente_titulos:3rem;    
+    }
+
+    
+}
+
+@media(max-width:460px) {
     .a-nav{
         display: block;
     }
-
-
-}
-@media(max-width:290px) {
 
 
 }

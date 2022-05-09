@@ -33,10 +33,6 @@ const punto_activo = function(){
     document.querySelector(`.punto_slicer[data-slicer="${current_position}"]`).classList.add('punto_slicer--activo')
 }
 
-
-
-
-
 const acomodar = function (){
     // console.log(current_position, "acomodar")
     slicers.forEach(function(s,i) {
@@ -61,21 +57,21 @@ const izquierda = function(){
 }
 
 
-
+// seteando los elementos donde deben de ir y creando los circulos de abajo
 inicializar()
 
-// console.log(flechas[1]);
+// leyendo que flecha se presiona
 flechas[0].addEventListener('click',izquierda)
 flechas[1].addEventListener('click',derecha)
 
-// creando el carrusel con las flechas
+// creando el carrusel con las flechas del teclado
 document.addEventListener('keydown', e =>{
     if(e.key === 'ArrowLeft')izquierda();
     if(e.key === 'ArrowRight')derecha();
 
 })
 
-//respondiendo a los botones 
+//respondiendo a los circulos de abajo 
 contenedor_puntos.addEventListener('click', e =>{
     // console.log(e.target.dataset.slicer)
     
