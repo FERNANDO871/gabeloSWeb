@@ -13,6 +13,8 @@
     --fuente_textos:'Poppins', sans-serif;
     --tamano_fuente_botones:2rem;
     --tamano_fuente_titulos:4rem;
+    --anchura_mapa:50%;
+    --altura_mapa:100vh;
     --p_max_width:100rem;
     --h1_max_width:100rem;
     --smooth_carrusel:transform, ease-in-out, 0s;
@@ -73,7 +75,10 @@ hr{
     color:var(--color_texto);
 }
 
-
+#map{
+    height: var(--altura_mapa);
+    width: var(--anchura_mapa);
+}
 
 
 

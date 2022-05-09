@@ -19,6 +19,7 @@
     <title>Montessano</title>
 </head>
 <body>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAe61TXsos3WoHRtNTdlhkGJiwkeKSRak&callback=iniciarMapa"></script>
   <header>
     <nav>
         <div class="contenedor-nav">
@@ -40,7 +41,7 @@
               <a class="a-nav " href="productos.html">Productos</a>
               <a class="a-nav  " href="cursos.html">Cursos</a>
               <a class="a-nav  " href="servicios.html">Servicios</a>
-              <a class="a-nav  " href="acerca.html">Nosotros</a>
+              <a class="a-nav a-nav--activo " href="acerca.html">Nosotros</a>
            </div>
             
   
@@ -68,7 +69,11 @@
       </div>
         <div class="img-enlace centrar_img" style='background-image: url("img/gabelo.jpg");'></div>
     </div>
-
+    <div class="negocio">
+      <div class="img-negocio img-fondo"></div>
+          
+          <div id="map"></div>
+    </div>
 
 
     <footer class="footer_salud" > 
@@ -80,6 +85,6 @@
 
   </main>
 
- 
+ <script src="js/google_maps.js"></script>
 </body>
 </html>
