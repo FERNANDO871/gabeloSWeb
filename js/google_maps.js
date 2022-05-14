@@ -1,13 +1,13 @@
-// api key AIzaSyBAe61TXsos3WoHRtNTdlhkGJiwkeKSRak 24.799236, -107.390358
+// api key AIzaSyBAe61TXsos3WoHRtNTdlhkGJiwkeKSRak 24.804208, -107.466352
 // Initialize and add the map
 function iniciarMapa(){
 
-    const coord = { lat: 24.799236, lng: -107.390358 };
+    const coord = { lat: 24.804208, lng: -107.466352 };
     // The map, centered at Uluru
     const map = new google.maps.Map(
       document.getElementById("map"),
       {
-        zoom: 13,
+        zoom: 14,
         center: coord,
       }
     );
