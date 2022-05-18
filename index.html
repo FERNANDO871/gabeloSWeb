@@ -14,31 +14,59 @@
     <title>Montessano</title>
 </head>
 <body>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAe61TXsos3WoHRtNTdlhkGJiwkeKSRak&callback=iniciarMapa"></script>
+  
   <header>
     <nav>
-        <div class="contenedor-nav">
-          <div class="contenedor-salud">
-            <a class="a-nav a-logo " href="index.html" ><img src="img/logos/logo1.png" class="logo"/></a>
-            <a class="a-nav a-salud" href="Salud.html"  > Salud basada en principios.  </a>
-          <label for="desplegar">
-            <svg xmlns="http://www.w3.org/2000/svg" class="menu-desplegable"  viewBox="0 0 24 24" stroke-width="2.5" stroke="#1eb346" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <line x1="4" y1="6" x2="20" y2="6" />
-            <line x1="4" y1="12" x2="20" y2="12" />
-            <line x1="4" y1="18" x2="20" y2="18" />
-          </svg>
-          </label>
-          
-          </div>
-          <input type="checkbox" class="hidden" id="desplegar">
-            <div class="desplegable">
-              <a class="a-nav " href="productos.html">Productos</a>
-              <a class="a-nav  " href="cursos.html">Cursos</a>
-              <a class="a-nav  " href="servicios.html">Servicios</a>
-<a class="a-nav  " href="acerca.html">Nosotros</a>
-           </div>
+      <div class="circulo_nav">
+        <div class="ojo_nav"></div>
+      </div>
+          <div class="contenedor_enlaces">
             
-  
+                <div class="t-a t-a1">
+                    <a class="enlace-index" href="Salud.html">
+                      <h1>Salud natural</h1>
+                      <p class="parrafo-index">La salud natural se basa en principios, no en remedios.</p>
+                    </a>
+                </div>    
+                
+                <div class="t-a t-a2" >
+                  <a class="enlace-index" href="cursos.html">
+                    <h1>Suprainmunidad</h1>
+                    <p class="parrafo-index">El curso que mejora tu salud.</p> 
+                  </a>
+                </div>  
+
+
+            
+            
+                  <div class="t-a t-a3 ">
+                    <a class="enlace-index" href="iris.html">
+                      <h1>Iris</h1>
+                      <p class="parrafo-index">El estudio de los ojos revela tu salud.</p>
+                    </a>
+                  </div>
+
+                  <div class="t-a t-a4">
+                    <a class="enlace-index" href="servicios.html">
+                      <h1>Servicios</h1>
+                      <p class="parrafo-index">Para recuperar tu salud.</p>
+                    </a>
+                  </div>
+
+
+
+
+                  <div class="t-a t-a5" >
+                    <a class="enlace-index" href="productos.html">
+                      <h1>Productos</h1>
+                      <p class="parrafo-index">Los productos de la mas alta calidad.</p>
+                    </a>
+                  </div> 
+
+
+
+          </div>  
         </div>
       </nav>
   </header>
@@ -46,70 +74,77 @@
 
 
 
-
-
   <main class="main-index">
 
-   
+    </div>
+    <section class="nosotros">
+        <img src="img/gabelo.jpg" class="img_gabelo justify_self_center">
+        <p>Gabelo Montessano, iridólogo funcional y representante de la ciencia de la salud basada en principios</p>
+        <a href="acerca.html" class="botones aling_self_center justify_self_center">Nosotros</a>
+        <div id="map"></div>
+    </section>
 
-            <div class="img-1 img-fondo centrar">
-                <div class=" texto-index">
-                    <h1 class="titulo-index">Salud natural</h1>
-                    <p class="parrafo-index">La salud natural se basa en principios, no en remedios.</p>
-                    <a class="botones" href="Salud.html">Intégrate</a>   
-                </div>	
+    <section class="productos" id="insertar_productos">
+      <!-- <div class="template_productos" style="display: none;" id="template_productos">
+
+          <div class="img_producto" style="background-image: url(img/prod/fems.jpeg);"></div>
+          <div class="contenedor_producto_info">
+            <h1 class="nombre_producto e1">Feme.</h1>
+            <p class="precio_producto e2">$500</p>
+            <p class="description_producto e3">Limpia al intestino grueso, colon, recto, elimina mal aliento, normaliza evacuación.</p>
+            <p class="existencia e4 ">disponibles: </p>
+            <p id="disponibles" class="e5">40</p>
+
+
+            <div class="cantidad_producto e6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon_item_plus" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+              </svg>
+              <p id="cantidad_elegida"> 5 </p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon_item_plus" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+              </svg>
             </div>
 
-
-          <div class="img-2 img-fondo centrar">
-                <div class=" texto-index">
-                    <h1 class="titulo-index">Iris</h1>
-                    <p class="parrafo-index">El estudio de los ojos revela tu salud.</p>
-                    <a class="botones" href="iris.html">Ver más</a>   
-                </div>  
-          </div>
-
-
-
-          <div class="img-3 img-fondo centrar">
-                <div class=" texto-index" >
-                    <h1 class="titulo-index">Suprainmunidad</h1>
-                    <p class="parrafo-index">El curso que mejora tu salud.</p>
-                    <a class="botones" href="cursos.html">Conócelos</a>   
-                </div>  
+            <div class="cont_comprar e7">
+              <p class="e9 texto_secundario">comprar</p>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon_item_plus" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#007a4f" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="3" y="5" width="18" height="14" rx="3" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+                <line x1="7" y1="15" x2="7.01" y2="15" />
+                <line x1="11" y1="15" x2="13" y2="15" />
+              </svg>
+            </div>
               
+            <div class="cont_comprar e8">
+              <p class="e11 texto_secundario">agregar</p>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon_item_plus" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#007a4f" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="6" cy="19" r="2" />
+                <circle cx="17" cy="19" r="2" />
+                <path d="M17 17h-11v-14h-2" />
+                <path d="M6 5l14 1l-1 7h-13" />
+              </svg>
+            </div>
+                  
           </div>
+      </div> -->
 
+    </section>
 
-  
-          <div class="img-4 img-fondo centrar">
-                <div class=" texto-index">
-                    <h1 class="titulo-index">Productos</h1>
-                    <p class="parrafo-index">Fórmulas naturistas que mejoran tu salud.</p>
-                    <a class="botones" href="productos.html">obtener</a>   
-                </div>  
-              
-          </div>
-
-
-        <div class="img-5 img-fondo centrar">
-              <div class="texto-index" >
-                  <h1 class="titulo-index">Servicios</h1>
-                  <p class="parrafo-index">Para recuperar tu salud.</p>
-                  <a class="botones" href="servicios.html">Ver más</a>   
-              </div>  
-        </div>
-    </div>
- 
   </main>
 
- 
+
   <footer > 
     <p class="parrafo_footer">&copy; 2022 Montessano </p>
     <a class="enlace_footer" href="preguntas.html">FAQ</a>
     </footer>
 
-        
+    <script src="js/google_maps.js"></script>
+    <script src="js/insertarProductos.js"></script>
 
 </body>
 </html>
