@@ -18,21 +18,21 @@
         "foto":"sd.jpg",
         "precio":"50900MXN",
         "descripcion":"Favorecela buena digestión, elimina gases, inflamación, agruras, etc.",
-        "cantidad":"1"
+        "cantidad":"10"
     },    
     {   
         "nombre":"SISTEMA URINARIO",
         "foto":"su.jpeg",
         "precio":"1200MXN",
         "descripcion":"Problemas de riñones, ácido úrico, vejiga, etc.",
-        "cantidad":"1"
+        "cantidad":"11"
     },    
     {   
         "nombre":"SISTEMA GLANDULAR",
         "foto":"sg.jpeg",
         "precio":"1200MXN",
         "descripcion":"Favorece la actividad glandular.",
-        "cantidad":"1"
+        "cantidad":"14"
     },
     {   
         "nombre":"SISTEMA NERVIOSO",
@@ -46,7 +46,7 @@
         "foto":"sc.jpeg",
         "precio":"1200MXN",
         "descripcion":"Mejora la circulación, várices, etc.",
-        "cantidad":"1"
+        "cantidad":"151"
     },
     {   
         "nombre":"SISTEMA RESPIRATORIO",
@@ -60,14 +60,14 @@
         "foto":"si.jpeg",
         "precio":"1200MXN",
         "descripcion":"Fortalece y limpia pulmones, bronquios, etc.",
-        "cantidad":"1"
+        "cantidad":"41"
     },
     {   
         "nombre":"FULMINA GRASA",
         "foto":"fg.jpeg",
         "precio":"1200MXN",
         "descripcion":"Elimina la grasa coorporal, peso excesivo, mejora la figura, etc.",
-        "cantidad":"1"
+        "cantidad":"61"
     }
 
 

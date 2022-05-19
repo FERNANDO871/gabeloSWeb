@@ -9,13 +9,12 @@
     <title>Montessano productos.</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/navegacion.css">
-    <link rel="stylesheet" href="css/estilos_index.css">
+    <link rel="stylesheet" href="css/estilos_productos.css">
     <link rel="shortcut icon" href="#">
 
     
 
-    <!-- Bootstrap core CSS -->
-<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
 
 
     
@@ -43,7 +42,7 @@
               <a class="a-nav a-nav--activo" href="productos.html">Productos</a>
               <a class="a-nav  " href="cursos.html">Cursos</a>
               <a class="a-nav  " href="servicios.html">Servicios</a>
-<a class="a-nav  " href="acerca.html">Nosotros</a>
+              <a class="a-nav  " href="acerca.html">Nosotros</a>
            </div>
             
   
@@ -53,59 +52,73 @@
 
 <main>
 
-  <section class="py-5 text-center container mt-5">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light ">Una selección de los mejores productos naturales para ayudarte en el proceso de recuperar tu salud.</h1>
+  <section class="contenedor_titulo_productos ">
+
+      <h1 class="titulo_productos">Una selección de los mejores productos naturales para ayudarte en el proceso de recuperar tu salud.</h1>
+
         <!-- <p class="lead text-muted letra_cursiva "> 	&quot; La mejor forma de lidiar con las enfermedades es evitarlas por completo. 	&quot;</p> -->
 
-      </div>
-    </div>
   </section>
 
-  <div class="album py-5 bg-light">
-    <div class="container">
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="insertar_productos">
 
-        <div class="col hidden" id="template_productos">
-          <div class="card shadow-sm">
-            <img src="img/arboles.jpg" alt="">
-            <div class="card-body">
-              <h5>nombre del producto</h5>
-              <p>precio</p>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text">existencia</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">comprar</button>
-                  <input type="number">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">ir al carrito</button>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="contenedor_productos " id="insertar_productos">
        
+
+            <!-- <div class="card_body"> 
+              <div class="card_img" style="background-image: url(img/prod/fems.jpeg)"></div>
+                <div class="card_info">
+                      <h5 class="card_nombre">nombre del producto</h5>
+                      <p class="card_precio">precio</p>
+                      <p class="card_descripcion">Limpia al intestino grueso, colon, recto, elimina mal aliento, normaliza evacuación.</p>
+                      <p class="card_disponibilidad no_disponibles">disponible: 1 </p>
+
+                      <div class="card_contenedor_cantidad">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
+                            </svg>
+                            <p class="card_cantidad">5</p>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon" viewBox="0 0 16 16">
+                              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                            </svg>
+                      </div>
+                      <div class="card_contenedor_botones">
+                            <div class="comprar">
+                              <button type="button" class="botones">comprar</button>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                                <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                              </svg>
+                            </div>
+                            
+                            <div class="agregar">
+                              <button type="button" class="botones">agregar</button>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                              </svg>
+                              
+                            </div>
+                      </div>
+
+                </div>
+            </div> -->
 
 
       </div>
-    </div>
 
-  </div>
 
 </main>
-    <!-- FOOTER -->
-    <footer class="container marketing"> 
-      <hr class="featurette-divider">
+
+
+    <footer > 
+      <hr >
     <p>&copy; 2022 Montessano </p>
       <a href="preguntas.html">FAQ</a>
   </footer>
 
 
-    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/insertarProductos.js"></script>
+    <script src="js/productos.js"></script>
 
       
   </body>

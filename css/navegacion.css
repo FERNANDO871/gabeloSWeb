@@ -5,13 +5,16 @@
     --verde_secundario:#00923f;
     --color_texto:#f8f9fa;
     --color_botones:#f8f9fa;
+    --background_color_botones:hsla(0, 0%, 100%, 0.2);
     --color_botones_hover:#000;
+    --background_color_botones_hover:rgb(255, 255, 255);
     --color_fondo_nav:#1f2326;
     --color_hover_burger:#112B3C;
     --color_hover_bg_burger:#205375;
     --color_hover_img: rgba(235, 235, 235, 0.2);
     --fuente_textos:'Poppins', sans-serif;
     --tamano_fuente_botones:2rem;
+    --transform_scale_botones:1.2;
     --tamano_fuente_titulos:4rem;
     --anchura_mapa:50%;
     --altura_mapa:100vh;
@@ -31,6 +34,14 @@
     padding: 0;
     margin: 0;
     font-family: var(--fuente_textos);
+
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none;   /* Chrome/Safari/Opera */
+        -khtml-user-select: none;    /* Konqueror */
+        -moz-user-select: none;      /* Firefox */
+        -ms-user-select: none;       /* Internet Explorer/Edge */
+        user-select: none;           /* Non-prefixed version, currently supported by any browser but < IE9 */
+    
     
 }
 
@@ -104,6 +115,9 @@ hr{
 .flex_center{
     align-self:center;
 }
+.opacidadMedia{
+    opacity: 0.5;
+}
 
 
 
@@ -125,6 +139,7 @@ hr{
     cursor: pointer;
     color:var(--color_botones);
     border-color: var(--color_botones);
+    background-color: var(--background_color_botones);
     display: inline-block;
     font-weight: 400;
     line-height: 1.5;
@@ -142,10 +157,10 @@ hr{
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
 }
 .botones:hover{
-    background-color:var(--color_botones);
+    background-color:var(--background_color_botones_hover);
     color: var(--color_botones_hover);
     border-width: 0;
-    transform: scale(1.2);
+    transform: scale(var( --transform_scale_botones));
 }
 
 /* carrusel */
