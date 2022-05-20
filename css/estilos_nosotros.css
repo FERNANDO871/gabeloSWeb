@@ -9,7 +9,6 @@ body{
     height:100vh;
     display: flex;
     overflow: hidden;
-
 }
 
 .img-negocio{
@@ -17,6 +16,7 @@ body{
     
     height: 100%;
     width: 50%;
+    
 }
 
 

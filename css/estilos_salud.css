@@ -1,6 +1,7 @@
 
 .contenedor_salud{
     width: 90%;
+    height:100vh;
     margin: 0 auto;
     flex-direction: column;
     color: var(--color_textos);
@@ -9,6 +10,7 @@
     text-align: center;
 
 }
+
 
 
 .titulo_salud{

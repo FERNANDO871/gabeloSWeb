@@ -65,21 +65,22 @@
       <div class="contenedor_productos " id="insertar_productos">
        
 
-            <!-- <div class="card_body"> 
-              <div class="card_img" style="background-image: url(img/prod/fems.jpeg)"></div>
+            <!--             <div class="card_body data-idProducto:"${i}"> 
+            <div class="card_img" style="background-image: url(img/prod/${producto.foto})"></div>
                 <div class="card_info">
-                      <h5 class="card_nombre">nombre del producto</h5>
-                      <p class="card_precio">precio</p>
-                      <p class="card_descripcion">Limpia al intestino grueso, colon, recto, elimina mal aliento, normaliza evacuación.</p>
-                      <p class="card_disponibilidad no_disponibles">disponible: 1 </p>
+                        <h5 class="card_nombre">${producto.nombre}</h5>
+                        <p class="card_precio">$ ${producto.precio}</p>
+                        <p class="card_descripcion">${producto.descripcion}</p>
+                        <p class="card_disponibilidad ${producto.cantidad>0 ? 'disponibles':'no_disponibles'}">disponible${producto.cantidad>1 ? 's':''}: <spand class="card_cantidadMaxima">${producto.cantidad}</span>
+                        </p>
 
-                      <div class="card_contenedor_cantidad">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon" viewBox="0 0 16 16">
+                      <div class="card_contenedor_cantidad ${producto.cantidad<=0 ? 'opacidadMedia':''}">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon menos ${producto.cantidad>0 ? 'opacidadMedia':''}" viewBox="0 0 16 16">
                               <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
                             </svg>
-                            <p class="card_cantidad">5</p>
+                            <p class="card_cantidad">0</p>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon mas giro_icon" viewBox="0 0 16 16">
                               <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                             </svg>
                       </div>
@@ -102,7 +103,7 @@
                       </div>
 
                 </div>
-            </div> -->
+            </div>  -->
 
 
       </div>
@@ -112,9 +113,14 @@
 
 
     <footer > 
-      <hr >
-    <p>&copy; 2022 Montessano </p>
-      <a href="preguntas.html">FAQ</a>
+      <p>&copy; 2022 Montessano </p>
+      <div class="contenedor_enlace_footer">
+        <a href="preguntas.html">FAQ</a>
+        <a href="productos.html">Productos</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="acerca.html">Nosotros</a>
+      </div>
   </footer>
 
 
