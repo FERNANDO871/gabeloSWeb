@@ -31,13 +31,47 @@
     grid-area: elemento5;
 }
 
+.biblia{
+    background-image: url(../img/biblia.jpg);
+    background-position: center;
+    background-size: cover;
+    height:100%;
+}
+.foto_papa{
+    background-image: url(../img/gabelo.jpg);
+    background-position: center;
+    background-size: cover;
+    height:100%;
+    border-radius:50% ;
+
+}
+
+
 
 .texto-index{
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     
+}
+.intro_index{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 122, 79, 0.3);
+    border-bottom: solid 1px rgba(129, 255, 192, 0.267);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.intro_index:hover{
+    opacity: 1;
 }
 
 

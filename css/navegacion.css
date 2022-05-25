@@ -27,6 +27,7 @@
 
 }
 
+
 *, *:before, *:after{
     box-sizing: border-box;
  
@@ -44,7 +45,9 @@
     
     
 }
-
+body{
+    position: relative;
+}
 nav{
     padding: 0.1px;
     background-color: var(--color_fondo_nav);
@@ -54,6 +57,130 @@ nav a:hover{
     box-shadow:  0px 0px 5px 1.5px var(--verde_primario);
     
 }
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    z-index: 10;
+    /* display: none; */
+}
+.icon_escape{
+    height:100px;
+    width: 100px;
+    transform: rotate(45deg);
+    fill: rgba(255, 255, 255, 0.788);
+    stroke:rgba(255, 255, 255, 0.788) ;
+    stroke-width: 0.1;
+    transition: transform 0.2s ease-in-out;
+}
+.icon_escape:hover{
+    
+    transform: rotate(135deg);
+}
+
+
+.ojo_nav{
+    overflow: hidden;
+    --tamano_fuente_titulos:3rem;
+    --tamano_parpado:0%;
+    --tamano_ojo:68vw;
+    --border_ojo:rgba(255, 255, 255, 0.395) solid 0.1px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    flex-shrink:0 ;
+    transition: transform 2s  ease-in-out;
+    transform: translate(-50%,-50%) rotate(45deg) scale(0.001);
+    background-color: rgba(255, 255, 255, 0.395);
+    height: var(--tamano_ojo);
+    width: var(--tamano_ojo);
+    max-height: 100vh;
+    max-width: 100vh;
+    border-radius:  80% 0 ;
+    background-color: #fdddcd26;
+    box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.1);
+    border:var(--border_ojo);
+    z-index: 100;
+    opacity: 1;
+    
+}
+.ojo_nav:hover{
+    --tamano_parpado:145%;
+}
+
+
+.parpado{
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 145%;
+
+    height: var(--tamano_parpado);
+    transform: translate(-50%,-50%) rotate(-45deg);
+    border-top:solid 1px rgba(255, 255, 255, 0.1) ;
+    border-bottom:solid 1px rgba(255, 255, 255, 0.1) ;
+    transition: height 1s 1.4s ease;
+    /* background-color: rgba(124, 29, 29, 0.188); */
+    background-color:rgba(255, 255, 255, 0.116);
+   
+}
+.pupila{
+    display: grid;
+    display:grid;
+    position: relative;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(5,1fr);
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+    '.  e2 e2 e10  e10   . '
+    'e1 e1  .   .   e3  e3'
+    'e4  .  .   .   .  e5'
+    'e6 e6  .   .   e8 e8 '
+    '.  e7 e7  e9   e9  . '
+    ;
+    height:calc(var(--tamano_ojo)*0.65);
+    width:calc(var(--tamano_ojo)*0.8);
+    max-height:65vh ;
+    max-width: 80vh;
+    border-radius: 50%;
+   
+}
+.iris{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius:50% ;
+    width:50%;
+    height:60%;
+      background-image: url(../img/ojo_nav.png), linear-gradient( 90deg,rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5)100%);
+    background-position:center ;
+    /* background-repeat:no-repeat ; */
+    background-size: 130%;
+}
+
+.a_index{
+    color: var(--color_texto);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+            z-index: 300;
+
+}
+.a_index:hover{
+    color: var(--verde_primario);
+}
+
 footer{
    padding: 2rem 20% ;
     margin: 0 auto ;
@@ -64,8 +191,6 @@ footer a{
     font-size:2rem ;
     display: inline-block;
     color: #fff;
-
-
 }
 footer a:hover{
  color:#007a4f ;
@@ -138,6 +263,21 @@ hr{
 .opacidadMedia{
     opacity: 0.5;
 }
+.e1{grid-area: e1;}
+.e2{grid-area: e2;}
+.e3{grid-area: e3;}
+.e4{grid-area: e4;}
+.e5{grid-area: e5;}
+.e6{grid-area: e6;}
+.e7{grid-area: e7;}
+.e8{grid-area: e8;}
+.e9{grid-area: e9;}
+.e10{grid-area: e10;}
+.e11{grid-area: e11;}
+.e12{grid-area: e12;}
+.e13{grid-area: e13;}
+.e14{grid-area: e14;}
+.e15{grid-area: e15;}
 
 
 
@@ -283,6 +423,7 @@ hr{
     font-size: 2.5rem;
     font-weight: bold;
     font-family: 'Roboto Slab', serif;
+    z-index: 300;
 
 }
 .a-nav--activo{
@@ -303,7 +444,7 @@ hr{
     align-items: center;
 }
 .a-nav:hover{
-    color: var(--color_texto);
+    color: var(--verde_primario);
 
 }
 

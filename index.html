@@ -15,30 +15,32 @@
 </head>
 <body>
   <header>
-    <nav>
-        <div class="contenedor-nav">
-          <div class="contenedor-salud">
-            <a class="a-nav a-logo " href="index.html" ><img src="img/logos/logo1.png" class="logo"/></a>
-            <a class="a-nav a-salud" href="Salud.html"  > Salud basada en principios.  </a>
-          <label for="desplegar">
-            <svg xmlns="http://www.w3.org/2000/svg" class="menu-desplegable"  viewBox="0 0 24 24" stroke-width="2.5" stroke="#1eb346" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <line x1="4" y1="6" x2="20" y2="6" />
-            <line x1="4" y1="12" x2="20" y2="12" />
-            <line x1="4" y1="18" x2="20" y2="18" />
-          </svg>
-          </label>
-          
+
+        <div class="ojo_nav centrar hidden ">
+          <div class="parpado centrar">
+            <div class="pupila">
+              <div class="iris"></div>
+              <a class="a_index e1 " href="productos.html">Productos</a>
+              <a class="a_index e2 " href="cursos.html">Cursos</a>
+              <a class="a_index e3 " href="servicios.html">Servicios</a>
+              <a class="a_index e4 " href="acerca.html">Nosotros</a>
+              <a class="a_index e5 " href="servicios.html">genealogia</a>
+              <a class="a_index e6 " href="acerca.html">doctrina</a>
+              <a class="a_index e7 " href="servicios.html">testimonios</a>
+              <a class="a_index e8 " href="acerca.html">Preguntas</a>
+              <a class="a_index e9 " href="servicios.html">Doctrina</a>
+              <a class="a_index e10" href="acerca.html">telegram</a>
+            </div>
           </div>
-          <input type="checkbox" class="hidden" id="desplegar">
-            <div class="desplegable">
-              <a class="a-nav " href="productos.html">Productos</a>
-              <a class="a-nav  " href="cursos.html">Cursos</a>
-              <a class="a-nav  " href="servicios.html">Servicios</a>
-              <a class="a-nav  " href="acerca.html">Nosotros</a>
-           </div>
-            
-  
+      </div>
+ 
+    
+    <div class="overlay hidden"> 
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon_escape" viewBox="0 0 16 16">
+        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+      </svg>
+
+    </div>
         </div>
       </nav>
   </header>
@@ -49,11 +51,14 @@
 
 
   <main class="main-index">
-
+                  <div class="intro_index">
+                    <img src="img/gabelo.jpg"  class="foto_papa" alt="autor de salud natural">
+                    <img src="img/biblia.jpg" class="biblia" alt="salud natural libro">
+                  </div>
    
 
             <div class="img-1 img-fondo centrar">
-                <div class=" texto-index">
+                  <div class=" texto-index">
                     <h1 class="titulo-index">Salud natural</h1>
                     <p class="parrafo-index">La salud natural se basa en principios, no en remedios.</p>
                     <a class="botones" href="Salud.html">Intégrate</a>   
@@ -115,6 +120,6 @@
 </footer>
 
         
-
+<script src="js/navegacion.js"></script>
 </body>
 </html>

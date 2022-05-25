@@ -45,8 +45,9 @@
     height: 3rem;
     
     cursor: pointer;
-    
+
 }
+
 .giro_icon{
     transition:  ease-in-out 0.1s transform;
 }
