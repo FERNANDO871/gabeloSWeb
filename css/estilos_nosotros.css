@@ -57,11 +57,18 @@ body{
 .secciones_img{
     width: 20%;
 }
-.seccion_1_texto, 
-.seccion_2_texto, 
-.seccion_3_texto{
-    margin: 0 2srem 0 0;
-} 
+.seccion_texto p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0px;
+    
+}
+.seccion_texto h2{
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0px;
+    
+}
 
 .reversa{
     flex-direction: row-reverse;
@@ -75,7 +82,7 @@ body{
 
     }
     .reversa{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
    
     .img-enlace{
