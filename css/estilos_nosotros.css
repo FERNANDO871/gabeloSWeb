@@ -25,9 +25,7 @@ body{
 
 
 .img-enlace{
-    border-radius: 50%;
     margin-right: 4rem;
-    background-color: rgba(51, 51, 51, 0.5);
     background-blend-mode: soft-light;
     display: flex;
     width: 25rem;

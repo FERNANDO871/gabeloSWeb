@@ -38,11 +38,9 @@
     height:100%;
 }
 .foto_papa{
-    background-image: url(../img/gabelo.jpg);
     background-position: center;
     background-size: cover;
     height:100%;
-    border-radius:50% ;
 
 }
 
