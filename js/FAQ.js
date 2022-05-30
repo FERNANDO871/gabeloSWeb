@@ -36,6 +36,7 @@ async  function imprimirPreguntas(){
       };
     
     data.forEach((categoria,i) => {
+        console.log(i,categoria)
         if(categoriaElegida == categoria.cveCategoria)
         preguntas.insertAdjacentHTML('beforeend',`
         <div class="contenedor_pregunta" data-pregunta="${i}">

@@ -25,14 +25,15 @@ function imprimirproductos(data){
             
             cursos.insertAdjacentHTML('beforeend',`
             <div class="curso" data-curso="${i}">
-            <div class="img_curso" style="
-            background-image: url(${curso.url_img});
-            background-size: 30%;
-            background-repeat: no-repeat;
-            background-position: center;
-            "></div>
-            <h1 class="nombre_curso">${curso.curso}</h1>
-          </div>
+                    <div class="img_curso" style="
+                    background-image: url(${curso.url_img});
+                    background-size: ${curso.curso =='LA COCINA DE EVA.'?'30':'50'}%;
+                    "></div>
+                    <div class="nombre_curso">
+                    <h1 >${curso.curso}</h1>
+                    </div>
+          </div> 
+          
 
             `);
             

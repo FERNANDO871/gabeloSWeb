@@ -1,11 +1,11 @@
 [
     {   
-        "curso":"LOS 7 HÁBITOS DE LA GENTE NATURALMENTE SANA.LOS 7 HÁBITOS DE LA GENTE NATURALMENTE SUPRAINMUNE.",
+        "curso":"LOS 7 HÁBITOS DE LA GENTE NATURALMENTE SANA.",
         "url_img":"img/cursos/habitos.svg"
     }, 
     {   
         "curso":"LOS 7 HÁBITOS DE LA GENTE NATURALMENTE SUPRAINMUNE.",
-        "url_img":"img/cursos/meditacion.svg"
+        "url_img":"img/cursos/ejecicio.svg"
     },      
     {   
         "curso":"PLH( LA 1RA LEY DE HEALTHYMOUNTAIN).",
@@ -28,7 +28,7 @@
         "url_img":"img/cursos/alcohol.svg"
     },      
     {   
-        "curso":"NATURISMO PARA TODOS (HISTORIA,CIENCIA,ACIERTOS Y DESACIERTOS).",
+        "curso":"NATURISMO PARA TODOS (HISTORIA, CIENCIA, ACIERTOS Y DESACIERTOS).",
         "url_img":"img/cursos/todos.svg"
     },      
     {   
