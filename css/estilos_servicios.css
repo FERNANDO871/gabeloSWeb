@@ -1,7 +1,5 @@
 .url_iris{
-    background-image:url(../img/servicios/ojo_gris.jpg) ;
- 
-  
+    background-image:url(../img/cursos/iris.jpg), linear-gradient(90deg, #69696980 0%, #69696980 100%); 
 }
 .url_shiatsu{
     background-image:url(../img/servicios/shiatsu.jpg) ;
@@ -25,4 +23,23 @@
     justify-content: space-between;
     
   
+}
+.boton_contactanos{
+    position: fixed;
+    bottom:0;
+    right:0;
+    transform: translate(75%,-50%);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:2rem;
+}
+.boton_contactanos:hover{
+    transform:translate(-5%,-50%) scale(var( --transform_scale_botones));
+
+}
+.titulo_servicio{
+    
+    width: 90%;
 }

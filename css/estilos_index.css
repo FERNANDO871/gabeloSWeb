@@ -1,152 +1,195 @@
 
-
-
-.main-index{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "elemento1 elemento1"
-    "elemento2 elemento3"
-    "elemento4 elemento5"
-    ;
-}
-.img-1{
-    background-image: url('../img/arboles.jpg');
-    grid-area: elemento1;
-}
-.img-2{
-    background-image: url('../img/cursos/iris.jpg');
-    grid-area: elemento2;
-}
-.img-3{
-    background-image: url('../img/seven.jpg');
-    grid-area: elemento3;
-}
-.img-4{
-    background-image: url('../img/productos.jpg');
-    grid-area: elemento4;
-}
-.img-5{
-    background-image: url('../img/servicios/shiatsu.jpg');
-    grid-area: elemento5;
-}
-
-.biblia{
-    background-image: url(../img/biblia.jpg);
-    background-position: center;
-    background-size: cover;
-    height:100%;
-}
-.foto_papa{
-    background-position: center;
-    background-size: cover;
-    height:100%;
-
-}
-
-
-
-.texto-index{
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-.intro_index{
+.overlay {
     position: fixed;
     top: 0;
     left: 0;
-    height: 150px;
     width: 100%;
-    padding: 20px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px);
     display: flex;
-    justify-content: space-around;
-    background-color: rgba(0, 122, 79, 0.3);
-    border-bottom: solid 1px rgba(129, 255, 192, 0.267);
+    align-items: flex-start;
+    justify-content: flex-end;
+    z-index: 10;
+    /* display: none; */
+}
+.icon_escape{
+    height:100px;
+    width: 100px;
+    transform: rotate(45deg);
+    fill: rgba(255, 255, 255, 0.788);
+    stroke:rgba(255, 255, 255, 0.788) ;
+    stroke-width: 0.1;
+    transition: transform 0.2s ease-in-out;
+}
+.icon_escape:hover{
+    
+    transform: rotate(135deg);
+}
+
+
+.ojo_nav{
+    overflow: hidden;
+    --tamano_fuente_titulos:3rem;
+    --tamano_parpado:0%;
+    --tamano_ojo:68vw;
+    --border_ojo:rgba(255, 255, 255, 0.395) solid 0.1px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-
-
-
-.fondo_imagen_iris{
-    background-color:rgba(195, 51, 51, 0.1) ;
-    color: #fff;
-}
- 
-
-@media(max-width:1250px){
-
-}
-@media(max-width:950px){
-    .img-2, .img-3, .img-4, .img-5{
-        height: 50vh;
-    }    
-    .botones{
-   
-     --tamano_fuente_botones:1rem;
-    }    
-    .parrafo-index{
-        font-size: 1.2rem;
-    }
-}
-@media(max-width:768px){
-
-
-
-
-    .main-index{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "elemento1 elemento1"
-        "elemento2 elemento2"
-        "elemento3 elemento3"
-        "elemento4 elemento4"
-        "elemento5 elemento5"
-        ;
-    }    
-    .img-1, .img-2, .img-3, .img-4, .img-5{
-  
-        height: 100vh;
-    }
-}
-@media(max-width:450px) {
-    /* .logo{
-        margin: 0 0rem;
-        padding: 0;
-        width:4rem;
-        height: 3rem;
- 
-        border-radius: 1rem;
-    } */
-
-
-
- 
-}
-@media(max-width:290px) {
-
-}
-
-@media(min-width:570px){
-
-
-.card{
-    transition:  ease-in, .3s;
-     overflow: hidden;
-}
-
-.card:hover{
-    transform:scale(1.2) ;
-    display: relative;
-    border-radius: 2rem;
-   
+    flex-shrink:0 ;
+    transition: transform 1.5s  ease-in-out;
+    transform: translate(-50%,-50%) rotate(45deg) scale(0.001);
+    background-color: rgba(255, 255, 255, 0.395);
+    height: var(--tamano_ojo);
+    width: var(--tamano_ojo);
+    max-height: 100vh;
+    max-width: 100vh;
+    border-radius:  80% 0 ;
+    background-color: #fdddcd26;
+    box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.1);
+    border:var(--border_ojo);
     z-index: 100;
-    /* background-color: rgba(124, 121, 121, 0.126); */
+    opacity: 1;
+    
+}
+.ojo_nav:hover{
+    --tamano_parpado:145%;
 }
 
+
+.parpado{
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 145%;
+
+    height: var(--tamano_parpado);
+    transform: translate(-50%,-50%) rotate(-45deg);
+    border-top:solid 1px rgba(255, 255, 255, 0.1) ;
+    border-bottom:solid 1px rgba(255, 255, 255, 0.1) ;
+    transition: height 1s 1.4s ease;
+    /* background-color: rgba(124, 29, 29, 0.188); */
+    background-color:rgba(255, 255, 255, 0.116);
+   
+}
+.pupila{
+    display: grid;
+    display:grid;
+    position: relative;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(5,1fr);
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+    '.  e2 e2 e3  e3   . '
+    'e1 e1  .   .   e5  e5'
+    'e4  .  .   .   .  e8'
+    'e6 e6  .   .   e9 e9 '
+    '.  e7 e7  e10   e10  . '
+    ;
+    height:calc(var(--tamano_ojo)*0.65);
+    width:calc(var(--tamano_ojo)*0.8);
+    max-height:65vh ;
+    max-width: 80vh;
+    border-radius: 50%;
+   
+}
+.iris{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius:50% ;
+    width:50%;
+    height:60%;
+      background-image: url(../img/ojo_nav.jpeg), linear-gradient( 90deg,rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5)100%);
+    background-position:center ;
+    /* background-repeat:no-repeat ; */
+    background-size: 130%;
 }
 
+.a_index{
+    color: var(--color_texto);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    z-index: 300;
+
+}
+.a_index:hover{
+    color: var(--verde_primario);
+}
+
+.main-index{
+    position: relative;
+}
+
+.img-1{
+    background-image: url(../img/arboles.jpg),  linear-gradient( 90deg,rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2)100%);
+    grid-area: elemento1;
+    color:#fff;
+    height: 100vh;
+}
+
+
+.biblia{
+    position: absolute;
+    right: 5%;
+    top:10%;
+    background-position: center;
+    background-size: cover;
+    height:150px;
+    opacity: 0.3;
+}
+.foto_papa{
+    position: absolute;
+    left: 5%;
+    top:10%;
+    background-position: center;
+    background-size: cover;
+    height:150px;
+    opacity: 0.55;
+}
+
+.texto-index{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.titulo_index{
+    font-weight: 700;
+}
+.parrafo_index{
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+@media(max-width:570px) {
+    .pupila{
+        display: grid;
+        display:grid;
+        position: relative;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(6,1fr);
+        align-items: center;
+        justify-items: center;
+        grid-template-areas: 
+        '.   .  e2 e2    .    . '
+        'e1 e1  .   .   e3  e3'
+        'e4  .  .   .   .  e5'
+        'e6 e6  .   .   e8 e8 '
+        'e9 e9  .   .   e10 e10 '
+        '.  . e7   e7   .  .'
+        ;
+
+    
+    }    
+}
