@@ -4,9 +4,9 @@ const biblia = document.querySelector('.biblia');
 const overlay = document.querySelector('.overlay');
 const ojo = document.querySelector('.ojo_nav');
 const Escape = document.querySelector('.icon_escape');
-console.log(biblia)
-console.log(ojo)
-console.log(overlay)
+// console.log(biblia)
+// console.log(ojo)
+// console.log(overlay)
 
 const mostrarNavegacion = function(visible=true) {
         overlay.classList.toggle('hidden');
@@ -29,11 +29,30 @@ nav.addEventListener('click',(e)=>{
 
 document.addEventListener('keydown', e =>{
     // console.log(e.key)
-    e.key= 'Escape' && mostrarNavegacion(false)
+    if(e.key== 'Escape' && !overlay.classList.contains('hidden')) mostrarNavegacion(false);
 });
 
 Escape.addEventListener('click', () =>{
     mostrarNavegacion(false)
 });
 
+ojo.addEventListener('click',e=>{
+    if(!e.target.closest('.svg_div') || !e.target.id)return;
+    let path = `http://127.0.0.1:5500/`;
+    
+    if(e.target.id=='nosotros')path += "acerca.html";
+    if(e.target.id=='cursos')path += "cursos.html";
+    if(e.target.id=='productos')path += "productos.html";
+    if(e.target.id=='servicios')path += "servicios.html";
+    if(e.target.id=='genealogia')path += "genealogia.html";
+    if(e.target.id=='telegram')path += "telegram.html";
+    if(e.target.id=='preguntas')path += "preguntas.html";
+    if(e.target.id=='testimonios')path += "testimonios.html";
+    if(e.target.id=='ciencias')path += "ciencias.html";
+    if(e.target.id=='doctrinas')path += "doctrinas.html";
+    // console.log(e.target.closest('.svg_div'))
+    // console.log(e.target);
+
+    window.location.href = path;
+})
 

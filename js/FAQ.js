@@ -6,7 +6,7 @@ const body = document.querySelector('body')
 
 let categoriaElegida;
 // console.log(categorias)
-console.log(preguntas)
+// console.log(preguntas)
 
 
 
@@ -36,7 +36,7 @@ async  function imprimirPreguntas(){
       };
     
     data.forEach((categoria,i) => {
-        console.log(i,categoria)
+        // console.log(i,categoria)
         if(categoriaElegida == categoria.cveCategoria)
         preguntas.insertAdjacentHTML('beforeend',`
         <div class="contenedor_pregunta" data-pregunta="${i}">
@@ -50,7 +50,7 @@ async  function imprimirPreguntas(){
         </div>
         `);
     });
-    console.log(preguntas)
+    // console.log(preguntas)
     
     
 
@@ -70,10 +70,10 @@ categorias.addEventListener('click', e =>{
 
 body.addEventListener('mouseover', e =>{
     const preguntas = document.querySelectorAll('[data-pregunta]')
-    console.log(preguntas)
+    // console.log(preguntas)
     if(!e.target.closest('[data-pregunta]')){
         preguntas.forEach((pregunta)=>{
-            console.log(pregunta)
+            // console.log(pregunta)
         pregunta.querySelector('.respuesta').style = "max-height: 0;opacity:0;"
         pregunta.querySelector('.icon').style = "transform:rotate(0deg);"
         })
@@ -82,10 +82,10 @@ body.addEventListener('mouseover', e =>{
     }
 
     const padre = e.target.closest('[data-pregunta]');
-    console.log(e.target.closest('[data-pregunta]'));
+    // console.log(e.target.closest('[data-pregunta]'));
     padre.querySelector('.respuesta').style = "max-height: 500px;opacity:1;"
     padre.querySelector('.icon').style = "transform:rotate(180deg);stroke:var(--verde_primario);"
-    console.log(padre.querySelector('.respuesta'));
+    // console.log(padre.querySelector('.respuesta'));
     
 })
 
