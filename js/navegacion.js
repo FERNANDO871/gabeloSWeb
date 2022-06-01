@@ -4,6 +4,12 @@ const biblia = document.querySelector('.biblia');
 const overlay = document.querySelector('.overlay');
 const ojo = document.querySelector('.ojo_nav');
 const Escape = document.querySelector('.icon_escape');
+
+const url_actual = window.location.href;
+// console.log(url_actual);
+let path = url_actual.substring(0,url_actual.length-10);
+
+// console.log(path);
 // console.log(biblia)
 // console.log(ojo)
 // console.log(overlay)
@@ -38,7 +44,6 @@ Escape.addEventListener('click', () =>{
 
 ojo.addEventListener('click',e=>{
     if(!e.target.closest('.svg_div') || !e.target.id)return;
-    let path = `http://127.0.0.1:5500/`;
     
     if(e.target.id=='nosotros')path += "acerca.html";
     if(e.target.id=='cursos')path += "cursos.html";
